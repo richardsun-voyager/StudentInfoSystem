@@ -1,0 +1,219 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A1AF39AD-CF7A-410E-9C3B-ABDA67EFC646}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StudentManagement</RootNamespace>
+    <AssemblyName>StudentManagement</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data3, Version=3.2.1.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4" />
+    <Reference Include="DevExpress.Utils3, Version=3.2.1.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4" />
+    <Reference Include="DevExpress.XtraBars3, Version=3.7.1.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors3, Version=3.2.1.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4" />
+    <Reference Include="DevExpress.XtraGrid3, Version=3.2.1.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar3, Version=2.7.1.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler3, Version=1.1.1.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList3, Version=1.11.1.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataManage\UserManage.cs" />
+    <Compile Include="DisplayPanelView\CP_BrigadeInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DisplayPanelView\CP_BrigadeInfo.Designer.cs">
+      <DependentUpon>CP_BrigadeInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayPanelView\CP_BrigadeManage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DisplayPanelView\CP_BrigadeManage.Designer.cs">
+      <DependentUpon>CP_BrigadeManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayPanelView\CP_PersonInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DisplayPanelView\CP_PersonInfo.Designer.cs">
+      <DependentUpon>CP_PersonInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayPanelView\CP_LEAVESQUERY.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DisplayPanelView\CP_LEAVESQUERY.Designer.cs">
+      <DependentUpon>CP_LEAVESQUERY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayPanelView\CP_PersonLeave.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DisplayPanelView\CP_PersonLeave.Designer.cs">
+      <DependentUpon>CP_PersonLeave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayPanelView\CP_StudentPunishmentRecords.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DisplayPanelView\CP_StudentPunishmentRecords.Designer.cs">
+      <DependentUpon>CP_StudentPunishmentRecords.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayPanelView\CP_TakingGroupLeaves.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DisplayPanelView\CP_TakingGroupLeaves.Designer.cs">
+      <DependentUpon>CP_TakingGroupLeaves.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayPanelView\CP_WELCOME.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DisplayPanelView\CP_WELCOME.Designer.cs">
+      <DependentUpon>CP_WELCOME.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataManage\DataManage.cs" />
+    <Compile Include="DataManage\DataStructure.cs" />
+    <Compile Include="DataManage\DBConnection.cs" />
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAbout.Designer.cs">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DisplayPanelView\CP_BrigadeInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CP_BrigadeInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayPanelView\CP_BrigadeManage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CP_BrigadeManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayPanelView\CP_PersonInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CP_PersonInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayPanelView\CP_LEAVESQUERY.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CP_LEAVESQUERY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayPanelView\CP_PersonLeave.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CP_PersonLeave.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayPanelView\CP_StudentPunishmentRecords.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CP_StudentPunishmentRecords.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayPanelView\CP_TakingGroupLeaves.resx">
+      <DependentUpon>CP_TakingGroupLeaves.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayPanelView\CP_WELCOME.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CP_WELCOME.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAbout.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSysConfig.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSysConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="frmSysConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSysConfig.Designer.cs">
+      <DependentUpon>frmSysConfig.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Student.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
